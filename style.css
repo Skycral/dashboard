@@ -158,8 +158,13 @@ li, ul {
   font-weight: bold;
 }
 
+nav > ul {
+  display: grid;
+}
+
 nav > ul > li {
   margin: 1rem 0;
+  align-self: center;
 }
 
 /* CONTENT */
@@ -201,19 +206,30 @@ nav > ul > li {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  
+  background: white;
+  position: relative; 
+}
+
+.colorline {
+  width: 3%;
+  height: 100%;
+  background-color: #2e8b57;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .card p {
   font-size: 1.2rem;
 }
 
-.icons {
-  width: 1rem;
-  height: 1rem;
+.card-icons {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  justify-content: end;
 }
-
 
 .box-ann, .box-trends {
   box-shadow: 2px 2px 2px 1px lightgrey;
@@ -236,12 +252,12 @@ nav > ul > li {
 
 /* ICONS */
 
-.search, .alarm, .eye, .alternative, .star {
+.search, .alarm, .eye, .alternative, .star, .icon {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border: none;
-  background-color: white;
+  background-color: transparent;
 }
 
 .search {
@@ -256,3 +272,60 @@ nav > ul > li {
   height: 2rem;
 }
 
+.star, .eye, .alternative, .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon {
+  margin-right: 1rem;
+  -webkit-filter: invert(100%);
+}
+
+.star {
+  background-image: url('icons/8675490_ic_fluent_star_add_regular_icon.png');
+}
+
+.eye {
+  background-image: url('icons/9080749_eye_check_icon.png');
+}
+
+.alternative {
+  background-image: url('icons/2203530_connect_direction_path_way_icon.png');
+}
+
+.home {
+  background-image: url('icons/house-black-silhouette-without-door.png');
+}
+
+.profile {
+  background-image: url('icons/user.png');
+}
+
+.message {
+  background-image: url('icons/comment.png');
+}
+
+.history {
+  background-image: url('icons/order-history.png');
+}
+
+.tasks {
+  background-image: url('icons/clipboard.png');
+}
+
+.communities {
+  background-image: url('icons/people.png');
+}
+
+.settings {
+  background-image: url('icons/settings.png');
+}
+
+.support {
+  background-image: url('icons/support.png');
+}
+
+.privacy {
+  background-image: url('icons/9032209_privacy_security_application_mobile_website_icon.png');
+}
