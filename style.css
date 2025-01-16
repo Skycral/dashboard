@@ -211,13 +211,13 @@ nav > ul > li {
 }
 
 .card {
-  min-height: 240px;
   padding: 2rem;
   box-shadow: 2px 2px 2px 2px lightgrey;
   border-radius: 1rem;
-  flex-direction: column;
   background: white;
   position: relative; 
+  display: grid;
+  
 }
 
 .colorline {
@@ -235,10 +235,11 @@ nav > ul > li {
 }
 
 .card-icons {
-  display: flex;
+  align-self: flex-end;
+  justify-self: end;
   gap: 1rem;
   padding-top: 1rem;
-  justify-content: end;
+  
   
 }
 
