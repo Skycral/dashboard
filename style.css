@@ -215,20 +215,10 @@ nav > ul > li {
   box-shadow: 2px 2px 2px 2px lightgrey;
   border-radius: 1rem;
   background: white;
-  position: relative; 
   display: grid;
-  
+  border-left: 1rem solid #2e8b57;
 }
 
-.colorline {
-  width: 3%;
-  height: 100%;
-  background-color: #2e8b57;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1rem 0 0 1rem;
-}
 
 .card p {
   font-size: 1.2rem;
